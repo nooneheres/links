@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para minha namorada Hani</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            background: linear-gradient(45deg, #dda2e2, #ff99ff, #c05dee, #a606e0);
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            animation: slideIn 1s ease-out;
+        }
+
+        .page {
+            background: #edd8fe;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            transform: translateX(-50px);
+            opacity: 0;
+            animation: slideIn 0.8s forwards;
+            transition: transform 0.3s ease;
+        }
+
+        .page:nth-child(2) { animation-delay: 0.2s; }
+        .page:nth-child(3) { animation-delay: 0.4s; }
+        .page:nth-child(4) { animation-delay: 0.6s; }
+        .page:nth-child(5) { animation-delay: 0.8s; }
+
+        .page:hover {
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+
+        .photo {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: 10px auto;
+            display: block;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.5s ease;
+            animation: fadeIn 1s forwards;
+        }
+
+        .photo.loaded {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .love-note {
+            background: #f3bdfc;
+            padding: 15px;
+            border-left: 4px solid #ff69b4;
+            margin: 15px 0;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideIn 0.6s forwards;
+            animation-delay: 0.3s;
+        }
+
+        .heart {
+            color: #ff0000;
+            font-size: 30px;
+            text-align: center;
+            margin: 20px;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px;
+            margin: 5px 0;
+            background: #e36aff;
+            border-radius: 5px;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideIn 0.5s forwards;
+        }
+
+        ul li:nth-child(1) { animation-delay: 0.2s; }
+        ul li:nth-child(2) { animation-delay: 0.3s; }
+        ul li:nth-child(3) { animation-delay: 0.4s; }
+        ul li:nth-child(4) { animation-delay: 0.5s; }
+        ul li:nth-child(5) { animation-delay: 0.6s; }
+        ul li:nth-child(6) { animation-delay: 0.7s; }
+        ul li:nth-child(7) { animation-delay: 0.8s; }
+        ul li:nth-child(8) { animation-delay: 0.9s; }
+        ul li:nth-child(9) { animation-delay: 1.0s; }
+        ul li:nth-child(10) { animation-delay: 1.1s; }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        h2 {
+            animation: pulse 2s infinite;
+            text-align: center;
+            color: #520068;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Para Hani❤️</h1>
+
+        <!-- Página 1: Como Tudo Começou -->
+        <div class="page">
+            <h2>Como Tudo Começou...</h2>
+            <img src="https://i.postimg.cc/rmT42cmn/Imagem-do-Whats-App-de-2025-03-16-s-21-13-56-7acbd9bd.jpg" 
+                 class="photo" 
+                 alt="Nosso começo"
+                 onload="this.classList.add('loaded')">
+            <p class="love-note">
+                Lembra do dia em que nos conhecemos logo quando o ano começou?<br>
+                Eu sabia que algo especial começava quando ficamos conversando por horas sem parar.
+            </p>
+        </div>
+
+        <!-- Página 2: Motivos para Amar -->
+        <div class="page">
+            <h2>10 Razões Pelas Qual Eu Te Amo</h2>
+            <ul>
+                <li>Seu sorriso ilumina meus dias</li>
+                <li>Você faz até os momentos simples serem especiais</li>
+                <li>Com você, eu me sinto em casa, mesmo longe de qualquer lugar</li>
+                <li>Porque você me faz sentir aceita como eu sou</li>
+                <li>Porque você tem um coração enorme e lindo</li>
+                <li>Porque você me faz sentir segura até no caos</li>
+                <li>Você se importa com as pessoas</li>
+                <li>Pela sua honestidade e transparência</li>
+                <li>Porque você planeja o futuro, mas vive o presente</li>
+                <li>Porque você me mostra que amar é escolher, todo dia a mesma pessoa, e eu escolho você</li>
+            </ul>
+            <div class="heart">♥︎</div>
+        </div>
+
+        <!-- Página 3: Momentos Marcantes -->
+        <div class="page">
+            <h2>Nossas Melhores Lembranças</h2>
+            <img src="https://i.postimg.cc/Px65Vk88/Imagem-do-Whats-App-de-2025-03-16-s-21-13-57-3d4ef219.jpg" 
+                 class="photo" 
+                 alt="Pedido de namoro"
+                 onload="this.classList.add('loaded')">
+            <img src="https://i.postimg.cc/NF5fWP1C/Imagem-do-Whats-App-de-2025-03-16-s-21-13-56-0bec98bf.jpg" 
+                 class="photo" 
+                 alt="Juntinhas"
+                 onload="this.classList.add('loaded')">
+            <p class="love
+              
+                 <!-- Página 4: Personagens -->
+        <div class="page">
+            <h2>Personagens que parecem com a gente</h2>
+            <img src="https://i.postimg.cc/prwx3VVy/5b9af4c99964c0a3726b4f5a2955f071.jpg" 
+                 class="photo" 
+                 alt="Casal 1"
+                 onload="this.classList.add('loaded')">
+            <img src="https://i.postimg.cc/zvb8dHr9/l-intro-1674056669.jpg" 
+                 class="photo" 
+                 alt="Casai 2"
+                 onload="this.classList.add('loaded')">
+        </div>
+
+        <!-- Página 5: Carta -->
+        <div class="page">
+            <h2>Uma Cartinha para Você</h2>
+            <div class="love-note">
+                <p>Hani,</p>
+                <p>Minha princesa, eu te amo tanto e você é tão especial pra mim. Que sorte é te ter ao meu lado e ser amada e cuidada por você. Você me ensina o que é amor e a amar, a ser cuidada e cuidar, a ser honesta e falar sempre a verdade, me dá vontade de ter um futuro e uma vida ao seu lado. Obrigada por me aguentar mesmo nos meus piores dias você está lá me amando. Eu verdadeiramente sei agora que o amor é leve, e pode ser tranquilo, que não precisa ter brigas. Tudo é mais fácil e melhor com você. Se eu pudesse escolher alguém pra viver o resto da minha vida, eu te escolheria. Nessa vida e nas outras. Princesa, você me faz tão bem. Eu te amo pra sempre.</p>
+                <p>Com todo meu amor,<br>May</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Animação ao rolar a página
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.photo, .love-note').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Efeito de corações melhorado
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '♥';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+            heart.style.fontSize = Math.random() * 30 + 20 + 'px';
+            document.body.appendChild(heart);
+
+            setTimeout(() => heart.remove(), 5000);
+        }
+
+        setInterval(createHeart, 300);
+
+        // Efeito de clique nas páginas
+        document.querySelectorAll('.page').forEach(page => {
+            page.addEventListener('click', () => {
+                page.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    page.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>
+           
